@@ -44,13 +44,6 @@ df = pd.DataFrame(
 
 st.map(df) # 地図の表示
 
-from PIL import Image
-st.title('Streamlit Hello World') # タイトル
-
-st.write('Display Image') #画像の表示
-
-img = Image.open('image031.jpg') # 画像の読み込み
-st.image(img, caption='sample', use_column_width=True) # 画像の表示
 
 
 st.title('Streamlit Hello World') # タイトル
@@ -145,4 +138,18 @@ dataframe = rand_df(r=10,c=3) # rに10、cに3を代入したrand_dfメソッド
 st.dataframe(dataframe.head(n=3))
 # データフレームのチャートの描画します。
 st.line_chart(dataframe)
+
+
+from PIL import Image
+st.title('Streamlit Hello World') # タイトル
+
+st.write('Display Image') #画像の表示
+
+file_path = st.file_uploader('', type=['png', 'jpg', 'jpeg'])
+if file_path is not None:
+    img = Image.open(file_path)
+    st.image(img)
+
+img = Image.open('image031.jpg') # 画像の読み込み
+st.image(img, caption='sample', use_column_width=True) # 画像の表示
 
