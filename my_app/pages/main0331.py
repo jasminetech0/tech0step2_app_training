@@ -17,17 +17,7 @@ options = st.multiselect(
 st.write(",".join(options))
 
 
-"""
-git init
-git remote add origin https://github.com/jasminetech0/streamlit_training1.git
-git add .
-git commit -m'1st commit'
-git push origin main
 
-
-streamlit run main.py
-
-"""
 
 # git init
 # git remote add origin https://github.com/jasminetech0/streamlit_training1.git

@@ -145,3 +145,4 @@ dataframe = rand_df(r=10,c=3) # rに10、cに3を代入したrand_dfメソッド
 st.dataframe(dataframe.head(n=3))
 # データフレームのチャートの描画します。
 st.line_chart(dataframe)
+
